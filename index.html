@@ -1,82 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Tutorials Hub-1</title>
-    <style>
-        h1{
-            color: lightcoral;
-            border: 10px solid dimgray;
-            background-color: dimgrey;
-        }
-        body{
-            background-color: #ffffcc;
-        }
-        img{
-            border: 3px solid black;
-        }
-        p{
-            font-family: comic sans ms;
-            font-weight: italic;
-        }
-        ol,ul{
-            font-family: comic sans ms;
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>HTML & CSS Tutorial</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <h1>Tutorial Topics</h1>
+  <header>
+    <h1>HTML & CSS Tutorial</h1>
+    <button id="toggle-contents">☰ Contents</button>
+  </header>
 
-
-
-    <!-- uncomment the correct output for the anchor tag-->
-     <a href ="about.html"> About Us</a>
-    <a href="followus.html"> Follow Us</a>
-
-     <!--<a ="about.html"> About Us</a>
-    <a ="followus.html"> Follow Us</a>--> 
-
-    <!-- <a :"about.html"> About Us</a>
-    <a :"followus.html"> Follow Us</a> -->
-
-    <!-- <href ="about.html"> About Us</a>
-    <href="followus.html"> Follow Us</a> -->
-
-
-    <hr>n
-   <p><h2><i><b><center>Press on the tutorial and read more about it!!!!</center></b> </i></h3></p> 
-    <hr>
-  
-
-   
-
-
-
-     
-    <a href="https://developer.mozilla.org/en-US/docs/Web/CSS">
-
-
-  <img src="images/css.png" width="200px" height="200px">
-
-
-
-    
-</a>
-    <p><i>CSS stands for Cascading Style Sheets.</i></p>
+  <nav id="sidebar" class="hidden">
     <ul>
-        <li>CSS is the language we use to style an HTML document.</li>
-        <li>CSS describes how HTML elements should be displayed.</li>
-        <li>CSS saves a lot of work. It can control the layout of multiple web pages all at once.</li>
+      <li><a href="#intro">Introduction</a></li>
+      <li><a href="#html-basics">HTML Basics</a></li>
+      <li><a href="#css-basics">CSS Basics</a></li>
+      <li><a href="#example">Example</a></li>
     </ul>
+  </nav>
 
+  <main>
+    <section id="intro">
+      <h2>Introduction</h2>
+      <p>This tutorial introduces you to HTML and CSS — the building blocks of the web.</p>
+    </section>
 
+    <section id="html-basics">
+      <h2>HTML Basics</h2>
+      <p>HTML defines the structure of your webpage using elements and tags.</p>
+      <pre><code>&lt;h1&gt;Hello, World!&lt;/h1&gt;</code></pre>
+    </section>
 
+    <section id="css-basics">
+      <h2>CSS Basics</h2>
+      <p>CSS is used to style HTML elements, controlling colors, layout, and fonts.</p>
+      <pre><code>h1 {
+  color: blue;
+}</code></pre>
+    </section>
 
- <!-- uncomment the code for adding a horizontal line. -->
-     <hr width =100%> 
-  
-   
+    <section id="example">
+      <h2>Live Example</h2>
+      <p>Try editing the HTML and CSS below to see changes in real time!</p>
 
+      <div class="editor">
+        <textarea id="html-code" placeholder="Write HTML here...">&lt;h1&gt;Hello World!&lt;/h1&gt;</textarea>
+        <textarea id="css-code" placeholder="Write CSS here...">h1 { color: red; text-align: center; }</textarea>
+      </div>
 
-    
+      <button id="run-code">Run Code</button>
+      <iframe id="preview"></iframe>
+    </section>
+  </main>
+
+  <footer>
+    <p>Created by Paakshik Badjatya | 2025</p>
+  </footer>
+
+  <script src="sketch.js"></script>
 </body>
 </html>
